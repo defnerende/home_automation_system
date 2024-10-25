@@ -16,7 +16,7 @@ A.Hardware Requirements
 
   1. Microcontroller or Hub:
  
-   - Options: Raspberry Pi, Arduino, ESP8266/ESP32, or a dedicated hub like SmartThings or Hubitat.
+      - Options: Raspberry Pi, Arduino, ESP8266/ESP32, or a dedicated hub like SmartThings or Hubitat.
 
   2. Sensors:
   
