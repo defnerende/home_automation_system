@@ -10,7 +10,7 @@ Let x1 be the earthquake magnitude. If x1 is equal or greater than 4, x1  = 1; o
 
 Let x2 represent whether there is fire or not. If there is a fire, x2 = 1;  otherwise x2 =0.
 
-__**The output:**
+__**The output:**_
 
 Let y be the state of the gas valve. If the valve is open, y= 0;  otherwise y  = 1.
 
