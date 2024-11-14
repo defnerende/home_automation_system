@@ -88,8 +88,32 @@ x1 | x2 | y2
 
 _**The table above represents the ‘and’ gate.**_
 
+Our _**fourth**_ home automation system is a plant irrigation system and it provides a smart solution for each plant that receives water on specific days based on its required watering frequency. The system consists of watering valves, a control unit, and a weekly irrigation schedule.Each plant is watered on specific days of the week. For example, Plant A is watered three times per week, while Plant B is watered twice per week. This ensures an ideal watering balance for each plant.It includes a control unit and the control unit initiates watering based on the day of the week, ensuring each plant is watered on its designated days.It includes watering valves When a plant’s watering day arrives, the control unit signals the appropriate valve to open, starting the irrigation process.
 
-The _**fifth**_ home automation system provides a secure door lock system. The system ensures that the door unlocks only when the correct authentication methods are followed, providing both high security and emergency flexibility. It uses facial recognition, password verification, and manual override to control the door output. Its working principle is stated as below.
+_**System inputs and outputs:**_
+
+_**Inputs:**_
+
+Day (day): The days of the week, represented by numbers 0 to 6 (from Monday to Sunday).
+
+_**Outputs:**_
+
+Watering Status (water): Set to 1 on the days each plant is watered, and 0 on other days.
+
+The truth table created according to these values is below:
+
+Day | Plant A | Plant B | Plant C | Plant D
+----|---------|---------|---------|---------
+000 |    1    |    0    |    1    |    0
+001 |    0    |    1    |    0    |    0
+010 |    1    |    0    |    0    |    1
+011 |    0    |    0    |    1    |    0
+100 |    1    |    1    |    0    |    0
+101 |    0    |    0    |    0    |    0
+110 |    0    |    0    |    0    |    0
+
+
+Our _**fifth**_ home automation system provides a secure door lock system. The system ensures that the door unlocks only when the correct authentication methods are followed, providing both high security and emergency flexibility. It uses facial recognition, password verification, and manual override to control the door output. Its working principle is stated as below.
 
 The password consists of 4-bits. All the 4 digits need to be correct for the password to be correct.
 
