@@ -112,6 +112,8 @@ Day | Plant A | Plant B | Plant C | Plant D
 101 |    0    |    0    |    0    |    0
 110 |    0    |    0    |    0    |    0
 
+Since we do not know the exact features of the card, we do not take into account the weight sensor and the amount of spilled water.
+
 
 Our _**fifth**_ home automation system provides a secure door lock system. The system ensures that the door unlocks only when the correct authentication methods are followed, providing both high security and emergency flexibility. It uses facial recognition, password verification, and manual override to control the door output. Its working principle is stated as below.
 
