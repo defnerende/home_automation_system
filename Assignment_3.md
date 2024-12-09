@@ -111,3 +111,5 @@ S1 represents the state where door is unlocked keyless.
 S2 represents the state where door is unlocked manually.
 
 Door lock output 0 reperesents that door is locked, and 1 represents door is unlocked.
+
+FR represents face recognition, and MO represents manual override.
