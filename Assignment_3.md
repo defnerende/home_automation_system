@@ -87,29 +87,31 @@ Sunday: 10 → x1 = 1, x2 = 0
 The state table for system_5 is given below. 
 
 
+| Current State | Password_OK | Face_recognition | Keyless_Unlock | Manual_Override  | Next State | Door Output |
+|---------------|-------------|------------------|----------------|------------------|------------|-------------|
+| S0            | 0           | 0                | 0              | 0                | S0         | 0           |
+| S0            | 0           | 1                | 0              | 0                | S0         | 0           |
+| S0            | 0           | 0                | 0              | 1                | S1         | 1           |
+| S0            | 0           | 1                | 0              | 1                | S1         | 1           |
+| S0            | 1           | 0                | 0              | 0                | S0         | 0           |
+| S0            | 1           | 1                | 1              | 0                | S1         | 1           |
+| S0            | 1           | 0                | 0              | 1                | S1         | 1           |
+| S0            | 1           | 1                | 1              | 1                | S0         | 0           |
+| S1            | 0           | 0                | 0              | 0                | S0         | 0           |
+| S1            | 0           | 1                | 0              | 0                | S0         | 0           |
+| S1            | 0           | 0                | 0              | 1                | S1         | 1           |
+| S1            | 0           | 1                | 0              | 1                | S1         | 1           |
+| S1            | 1           | 0                | 0              | 0                | S0         | 0           |
+| S1            | 1           | 1                | 1              | 0                | S1         | 1           |
+| S1            | 1           | 0                | 0              | 1                | S1         | 1           |
+| S1            | 1           | 1                | 1              | 1                | S0         | 0           |
 
-| Current State | P0, P1, P2, P3 | FR  | MO  | Next State | Door_lock Output |
-|---------------|----------------|-----|-----|------------|------------------|
-| S0            | 0000           | 0   | 0   | S0         | 0                |
-| S0            | 0000           | 0   | 1   | S2         | 1                |
-| S0            | 1111           | 1   | 0   | S1         | 1                |
-| S0            | 1111           | 1   | 1   | S0         | 0                |
-| S0            | 1111           | 0   | 1   | S2         | 1                |
-| S1            | 1111           | 1   | 0   | S1         | 1                |
-| S1            | 1111           | 1   | 1   | S2         | 1                |
-| S2            | 0000           | 0   | 1   | S2         | 1                |
-| S2            | 1111           | 1   | 0   | S0         | 0                |
-| S2            | 1111           | 1   | 1   | S2         | 1                |
-| S0            | 0001           | 0   | 1   | S2         | 1                |
-| S0            | 1010           | 1   | 0   | S0         | 0                |
-| S0            | 1010           | 1   | 1   | S2         | 1                |
+
 
 Here, S0 represents the state where door is locked.
 
-S1 represents the state where door is unlocked keyless.
-
-S2 represents the state where door is unlocked manually.
+S1 represents the state where door is unlocked.
 
 Door lock output 0 reperesents that door is locked, and 1 represents door is unlocked.
 
-FR represents face recognition, and MO represents manual override.
+
